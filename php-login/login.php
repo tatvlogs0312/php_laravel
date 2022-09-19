@@ -14,7 +14,7 @@ $action = getValue("action", "POST", "str", "");
 
 $dbConnection = new dbConnection();
 $conn = $dbConnection->getConnection();
-$sql = "SELECT * FROM users WHERE name = " . $username . " AND  password = ". $password ." AND is_admin = 1";
+$sql = "SELECT * FROM users WHERE name = '$username' AND  password = '$password' AND is_admin = 1";
 $result = $conn->query($sql);
 
 $errorMsg = "";
@@ -28,7 +28,7 @@ if ($action == "login") {
 
     // Nếu có đủ dữ liệu POST thì xác thực
     if ($errorMsg == "") {
-        if ($result->num_rows >= 0) {
+        if ($result->num_rows >= 1) {
             // Success
             // echo "Success";
             $_SESSION["logged"] = 1;
