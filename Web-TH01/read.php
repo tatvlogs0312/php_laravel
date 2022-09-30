@@ -5,7 +5,7 @@ if (isset($_GET["id"]) && !empty(trim($_GET["id"]))) {
     require_once "config.php";
 
     // Chuẩn bị câu lệnh Select
-    $sql = "SELECT * FROM employees WHERE id = ?";
+    $sql = "SELECT * FROM employee WHERE id = ?";
 
     if ($stmt = $mysqli->prepare($sql)) {
         // Liên kết các biến với câu lệnh đã chuẩn bị

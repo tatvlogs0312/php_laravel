@@ -42,7 +42,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Kiểm tra lỗi đầu vào trước khi chèn vào cơ sở dữ liệu
     if(empty($name_err) && empty($address_err) && empty($salary_err)){
         // Chuẩn bị câu lệnh Update
-        $sql = "UPDATE employees SET name=?, address=?, salary=? WHERE id=?";
+        $sql = "UPDATE employee SET name=?, address=?, salary=? WHERE id=?";
  
         if($stmt = $mysqli->prepare($sql)){
             // Liên kết các biến với câu lệnh đã chuẩn bị

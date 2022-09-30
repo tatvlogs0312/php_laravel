@@ -5,7 +5,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     require_once "config.php";
 
     // Chuẩn bị câu lệnh delete
-    $sql = "DELETE FROM employees WHERE id = ?";
+    $sql = "DELETE FROM employee WHERE id = ?";
 
     if ($stmt = $mysqli->prepare($sql)) {
         // Liên kết các biến với câu lệnh đã chuẩn bị

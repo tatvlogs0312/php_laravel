@@ -40,9 +40,8 @@
                     <?php
                     // Include file config.php
                     require_once "config.php";
-
-                    // Cố gắng thực thi truy vấn
-                    $sql = "SELECT * FROM employees";
+                    // Cố gắng thực thi truy vấn          
+                    $sql = "SELECT * FROM employee"; 
                     if ($result = $mysqli->query($sql)) {
                         if ($result->num_rows > 0) {
                             echo "<table class='table table-bordered table-striped'>";

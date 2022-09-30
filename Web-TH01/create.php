@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Kiểm tra lỗi đầu vào trước khi chèn vào cơ sở dữ liệu
     if (empty($name_err) && empty($address_err) && empty($salary_err)) {
         // Chuẩn bị một câu lệnh insert
-        $sql = "INSERT INTO employees (name, address, salary) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO employee (name, address, salary) VALUES (?, ?, ?)";
 
         if ($stmt = $mysqli->prepare($sql)) {
             // Liên kết các biến với câu lệnh đã chuẩn bị
@@ -53,8 +53,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Cố gắng thực thi câu lệnh đã chuẩn bị
             if ($stmt->execute()) {
                 // Tạo bản ghi thành công. Chuyển hướng đến trang đích
-                header("location: index.php");
-                exit();
+                // header("location: index.php"); 
+                $last_id = $mysqli->insert_id;
+                echo("ID đã chèn cuối cùng là: " . $last_id);                
+                // exit();
             } else {
                 echo "Oh, no. Có gì đó sai sai. Vui lòng thử lại.";
             }
