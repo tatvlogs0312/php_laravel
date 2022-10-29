@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lập trình web nâng cao\\TH-06-ASP\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
+    "D:\\DaiHocDienLuc\\ki_5\\WebNangCao\\php_laravel\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "D:\\Lập trình web nâng cao\\TH-06-ASP\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {
+    "D:\\DaiHocDienLuc\\ki_5\\WebNangCao\\php_laravel\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lập trình web nâng cao\\TH-06-ASP\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "projectUniqueName": "D:\\DaiHocDienLuc\\ki_5\\WebNangCao\\php_laravel\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
         "projectName": "RazorPagesMovie",
-        "projectPath": "D:\\Lập trình web nâng cao\\TH-06-ASP\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
-        "packagesPath": "C:\\Users\\ddom6\\.nuget\\packages\\",
-        "outputPath": "D:\\Lập trình web nâng cao\\TH-06-ASP\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
+        "projectPath": "D:\\DaiHocDienLuc\\ki_5\\WebNangCao\\php_laravel\\RazorPagesMovie\\RazorPagesMovie\\RazorPagesMovie.csproj",
+        "packagesPath": "C:\\Users\\Tran Anh Tuan\\.nuget\\packages\\",
+        "outputPath": "D:\\DaiHocDienLuc\\ki_5\\WebNangCao\\php_laravel\\RazorPagesMovie\\RazorPagesMovie\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ddom6\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Tran Anh Tuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,32 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.3.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -79,15 +49,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
